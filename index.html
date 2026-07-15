@@ -1,0 +1,210 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Clínica Veterinaria Don Can | Cuidamos a quienes siempre te acompañan</title>
+  <meta name="description" content="Clínica Veterinaria Don Can - consultas, vacunas, cirugías y análisis para tu mascota. Llámanos al 70749570." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;900&family=Dancing+Script:wght@700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="paw-bg" aria-hidden="true" id="pawBg"></div>
+  <header id="header">
+    <div class="container nav-container">
+      <div class="logo-wrap">
+        <div class="logo-icon">&#x1F43E;</div>
+        <div class="logo-text">
+          <span class="logo-clinic">Clínica Veterinaria</span>
+          <span class="logo-name">Don <em>Can</em></span>
+        </div>
+      </div>
+      <nav id="mainNav" aria-label="Menú principal">
+        <ul>
+          <li><a href="#inicio" class="nav-link">Inicio</a></li>
+          <li><a href="#servicios" class="nav-link">Servicios</a></li>
+          <li><a href="#mascotas" class="nav-link">Mascotas</a></li>
+          <li><a href="#nosotros" class="nav-link">Nosotros</a></li>
+          <li><a href="#contacto" class="nav-link">Contacto</a></li>
+        </ul>
+      </nav>
+      <a href="tel:70749570" class="btn-call" id="headerCallBtn">📞 70749570</a>
+      <button class="menu-toggle" id="menuToggle" aria-label="Abrir menú" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+  <section id="inicio" class="hero">
+    <div class="hero-particles" aria-hidden="true" id="heroParticles"></div>
+    <div class="container hero-inner">
+      <div class="hero-content">
+        <p class="hero-sub">🐾 Tu mascota merece lo mejor</p>
+        <h1 class="hero-title">
+          Clínica Veterinaria<br/>
+          <span class="hero-name-don">Don </span><span class="hero-name-can">Can</span>
+        </h1>
+        <p class="hero-tagline">Cuidamos a quienes <em>siempre te acompañan</em></p>
+        <div class="hero-pills">
+          <span class="pill">🔬 Análisis</span>
+          <span class="pill">💉 Vacunas</span>
+          <span class="pill">🩺 Consultas</span>
+          <span class="pill">🏥 Cirugías</span>
+        </div>
+        <div class="hero-cta">
+          <a href="tel:70749570" class="btn-primary" id="heroCallBtn">📞 Llamar ahora: 70749570</a>
+          <a href="#servicios" class="btn-outline" id="heroServicesBtn">Ver servicios</a>
+        </div>
+      </div>
+      <div class="hero-mascot">
+        <div class="mascot-ring">
+          <div class="mascot-cross"><span>✚</span></div>
+          <div class="mascot-stethoscope">🩺</div>
+          <div class="mascot-emoji">🐕</div>
+          <div class="mascot-paw-badge">🐾</div>
+        </div>
+        <div class="mascot-glow"></div>
+      </div>
+    </div>
+    <div class="hero-wave" aria-hidden="true">
+      <svg viewBox="0 0 1440 120" preserveAspectRatio="none"><path d="M0,60 C360,120 1080,0 1440,60 L1440,120 L0,120 Z" fill="var(--bg-section)"/></svg>
+    </div>
+  </section>
+  <section id="servicios" class="section">
+    <div class="container">
+      <div class="section-head">
+        <p class="section-tag">¿Qué hacemos?</p>
+        <h2 class="section-title">Nuestros <span class="accent-orange">Servicios</span></h2>
+        <p class="section-desc">Atención completa y profesional para todas las mascotas</p>
+      </div>
+      <div class="services-grid">
+        <div class="service-card" id="svcConsulta"><div class="svc-icon">🩺</div><h3>Consulta General</h3><p>Revisión completa de salud, diagnóstico y tratamiento personalizado para tu mascota.</p><div class="svc-paw">🐾</div></div>
+        <div class="service-card" id="svcVacunas"><div class="svc-icon">💉</div><h3>Vacunación</h3><p>Programa de vacunas al día para perros, gatos y otras mascotas. Protección garantizada.</p><div class="svc-paw">🐾</div></div>
+        <div class="service-card featured" id="svcCirugia"><div class="svc-icon">🏥</div><h3>Cirugías</h3><p>Procedimientos quirúrgicos con equipos modernos y veterinarios especializados.</p><div class="svc-paw">🐾</div></div>
+        <div class="service-card" id="svcAnalisis"><div class="svc-icon">🔬</div><h3>Análisis Clínicos</h3><p>Laboratorio clínico completo: sangre, orina, radiografías y ecografías.</p><div class="svc-paw">🐾</div></div>
+        <div class="service-card" id="svcGrooming"><div class="svc-icon">✂️</div><h3>Estética y Grooming</h3><p>Baño, corte de pelo y uñas. Tu mascota siempre bonita y bien cuidada.</p><div class="svc-paw">🐾</div></div>
+        <div class="service-card" id="svcEmergencia"><div class="svc-icon">🚨</div><h3>Emergencias</h3><p>Atención de urgencias para cuando tu mascota más lo necesita. Llámanos.</p><div class="svc-paw">🐾</div></div>
+      </div>
+    </div>
+  </section>
+  <section id="mascotas" class="section section-dark">
+    <div class="container">
+      <div class="section-head">
+        <p class="section-tag">Con amor y experiencia</p>
+        <h2 class="section-title">Atendemos a <span class="accent-teal">todas</span> tus mascotas</h2>
+        <p class="section-desc">Cada animal merece cuidado especial y atención de calidad</p>
+      </div>
+      <div class="pets-grid">
+        <div class="pet-card" id="petPerro"><div class="pet-emoji">🐕</div><div class="pet-name">Perros</div><div class="pet-paws">🐾🐾🐾</div></div>
+        <div class="pet-card" id="petGato"><div class="pet-emoji">🐈</div><div class="pet-name">Gatos</div><div class="pet-paws">🐾🐾🐾</div></div>
+        <div class="pet-card" id="petConejo"><div class="pet-emoji">🐇</div><div class="pet-name">Conejos</div><div class="pet-paws">🐾🐾🐾</div></div>
+        <div class="pet-card" id="petAve"><div class="pet-emoji">🦜</div><div class="pet-name">Aves</div><div class="pet-paws">🐾🐾🐾</div></div>
+        <div class="pet-card" id="petHamster"><div class="pet-emoji">🐹</div><div class="pet-name">Hamsters</div><div class="pet-paws">🐾🐾🐾</div></div>
+        <div class="pet-card" id="petOtros"><div class="pet-emoji">🐾</div><div class="pet-name">Y más...</div><div class="pet-paws">🐾🐾🐾</div></div>
+      </div>
+    </div>
+  </section>
+  <section class="stats-banner">
+    <div class="container stats-inner">
+      <div class="stat-item"><span class="stat-num" data-target="1200">0</span><span class="stat-plus">+</span><span class="stat-label">Mascotas atendidas</span></div>
+      <div class="stat-divider">🐾</div>
+      <div class="stat-item"><span class="stat-num" data-target="8">0</span><span class="stat-plus">+</span><span class="stat-label">Años de experiencia</span></div>
+      <div class="stat-divider">🐾</div>
+      <div class="stat-item"><span class="stat-num" data-target="5">0</span><span class="stat-label">Veterinarios especializados</span></div>
+      <div class="stat-divider">🐾</div>
+      <div class="stat-item"><span class="stat-num" data-target="100">0</span><span class="stat-plus">%</span><span class="stat-label">Clientes satisfechos</span></div>
+    </div>
+  </section>
+  <section id="nosotros" class="section">
+    <div class="container nosotros-inner">
+      <div class="nosotros-img-wrap">
+        <div class="nosotros-badge"><span class="badge-num">8</span><span class="badge-text">Años de<br/>confianza</span></div>
+        <div class="nosotros-img-frame">
+          <div class="nosotros-emoji-scene">
+            <div class="scene-circle">
+              <span class="scene-dog">🐕</span>
+              <span class="scene-cross">✚</span>
+              <span class="scene-steth">🩺</span>
+              <span class="scene-paw1">🐾</span>
+              <span class="scene-paw2">🐾</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="nosotros-content">
+        <p class="section-tag">Quiénes somos</p>
+        <h2 class="section-title">Amor y <span class="accent-orange">profesionalismo</span> en cada consulta</h2>
+        <p class="nosotros-text">En la <strong>Clínica Veterinaria Don Can</strong> creemos que las mascotas son parte de la familia. Por eso brindamos atención médica de alta calidad, con tecnología moderna y sobre todo, con el amor y la dedicación que tu compañero de vida merece.</p>
+        <div class="valores-list">
+          <div class="valor-item"><span class="valor-icon">❤️</span><div><strong>Amor</strong><p>Tratamos a cada mascota como si fuera nuestra</p></div></div>
+          <div class="valor-item"><span class="valor-icon">🛡️</span><div><strong>Cuidado</strong><p>Protocolos de seguridad en todos los procedimientos</p></div></div>
+          <div class="valor-item"><span class="valor-icon">💊</span><div><strong>Salud</strong><p>Diagnósticos precisos y tratamientos efectivos</p></div></div>
+        </div>
+        <a href="tel:70749570" class="btn-primary" id="nosotrosCallBtn">📞 Agendar cita: 70749570</a>
+      </div>
+    </div>
+  </section>
+  <section class="section testimonios-section">
+    <div class="container">
+      <div class="section-head">
+        <p class="section-tag">Lo que dicen nuestros clientes</p>
+        <h2 class="section-title">Testimonios <span class="accent-teal">🐾</span></h2>
+      </div>
+      <div class="testimonios-grid">
+        <div class="testimonio-card" id="test1"><div class="stars">⭐⭐⭐⭐⭐</div><p>"Llevé a mi perrito Max muy asustado y el equipo de Don Can lo atendió con tanto cariño. ¡Excelente servicio!"</p><div class="testimonio-author"><span class="author-avatar">🐕</span><div><strong>María García</strong><small>Dueña de Max, Yorkshire Terrier</small></div></div></div>
+        <div class="testimonio-card" id="test2"><div class="stars">⭐⭐⭐⭐⭐</div><p>"Mi gatita Luna necesitó cirugía y quedé muy tranquilo con la atención. Los veterinarios son muy profesionales."</p><div class="testimonio-author"><span class="author-avatar">🐈</span><div><strong>Carlos Mendoza</strong><small>Papá de Luna, gata persa</small></div></div></div>
+        <div class="testimonio-card" id="test3"><div class="stars">⭐⭐⭐⭐⭐</div><p>"Las vacunas de mi conejo siempre aquí. Personal amable, instalaciones limpias y precios accesibles."</p><div class="testimonio-author"><span class="author-avatar">🐇</span><div><strong>Ana Torres</strong><small>Dueña de Pipo, conejo enano</small></div></div></div>
+      </div>
+    </div>
+  </section>
+  <section id="contacto" class="section section-dark contacto-section">
+    <div class="container contacto-inner">
+      <div class="contacto-info">
+        <p class="section-tag">Estamos para ti</p>
+        <h2 class="section-title">Contáctanos <span class="accent-orange">hoy</span></h2>
+        <p>Tu mascota no puede esperar. Llámanos o escríbenos y te atendemos de inmediato.</p>
+        <div class="contact-items">
+          <a href="tel:70749570" class="contact-item" id="contactPhone"><span class="contact-icon">📞</span><div><strong>Teléfono</strong><span>70749570</span></div></a>
+          <div class="contact-item" id="contactHorario"><span class="contact-icon">🕐</span><div><strong>Horario</strong><span>Lun – Sáb: 8:00 AM – 7:00 PM</span></div></div>
+          <div class="contact-item" id="contactUbicacion"><span class="contact-icon">📍</span><div><strong>Ubicación</strong><span>Tu mascota, nuestra prioridad</span></div></div>
+          <div class="contact-item" id="contactEmergencia"><span class="contact-icon">🚨</span><div><strong>Emergencias</strong><span>Llama al 70749570 – atención inmediata</span></div></div>
+        </div>
+        <div class="social-row">
+          <a href="#" class="social-btn" id="socialFb">📘 Facebook</a>
+          <a href="#" class="social-btn" id="socialIg">📷 Instagram</a>
+          <a href="https://wa.me/70749570" class="social-btn whatsapp" id="socialWa">💬 WhatsApp</a>
+        </div>
+      </div>
+      <div class="contacto-form-wrap">
+        <form class="contacto-form" id="contactForm" novalidate>
+          <h3>Agendar cita 📅</h3>
+          <div class="form-group"><label for="nombreDueno">Tu nombre</label><input type="text" id="nombreDueno" placeholder="Ej: María García" required /></div>
+          <div class="form-group"><label for="telefono">Teléfono</label><input type="tel" id="telefono" placeholder="Tu número de contacto" required /></div>
+          <div class="form-group"><label for="nombreMascota">Nombre de tu mascota</label><input type="text" id="nombreMascota" placeholder="Ej: Max" required /></div>
+          <div class="form-group"><label for="tipoMascota">Tipo de mascota</label><select id="tipoMascota" required><option value="">Seleccionar...</option><option value="perro">🐕 Perro</option><option value="gato">🐈 Gato</option><option value="conejo">🐇 Conejo</option><option value="ave">🦜 Ave</option><option value="otro">🐾 Otro</option></select></div>
+          <div class="form-group"><label for="servicio">Servicio requerido</label><select id="servicio" required><option value="">Seleccionar...</option><option value="consulta">🩺 Consulta general</option><option value="vacuna">💉 Vacunación</option><option value="cirugia">🏥 Cirugía</option><option value="analisis">🔬 Análisis</option><option value="grooming">✂️ Grooming</option><option value="emergencia">🚨 Emergencia</option></select></div>
+          <div class="form-group"><label for="mensaje">Mensaje adicional</label><textarea id="mensaje" rows="3" placeholder="Cuéntanos sobre tu mascota..."></textarea></div>
+          <button type="submit" class="btn-primary btn-full" id="submitFormBtn">🐾 Solicitar cita</button>
+          <div class="form-success" id="formSuccess" hidden>✅ ¡Gracias! Te contactaremos pronto.</div>
+        </form>
+      </div>
+    </div>
+  </section>
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="footer-logo">
+        <span class="logo-clinic">Clínica Veterinaria</span>
+        <span class="logo-name">Don <em>Can</em></span>
+        <p>Amor • Cuidado • Salud 🐾</p>
+      </div>
+      <div class="footer-links"><h4>Servicios</h4><ul><li><a href="#servicios">Consulta General</a></li><li><a href="#servicios">Vacunación</a></li><li><a href="#servicios">Cirugías</a></li><li><a href="#servicios">Análisis Clínicos</a></li></ul></div>
+      <div class="footer-contact"><h4>Contacto</h4><p>📞 <a href="tel:70749570">70749570</a></p><p>🕐 Lun–Sáb: 8AM – 7PM</p><p>💬 <a href="https://wa.me/70749570">WhatsApp</a></p></div>
+    </div>
+    <div class="footer-bottom"><p>© 2026 Clínica Veterinaria Don Can — Todos los derechos reservados 🐾</p></div>
+  </footer>
+  <a href="tel:70749570" class="fab-call" id="fabCall" aria-label="Llamar a Don Can">📞<span class="fab-tooltip">70749570</span></a>
+  <button class="back-top" id="backTop" aria-label="Volver arriba">🐾</button>
+  <script src="app.js"></script>
+</body>
+</html>
