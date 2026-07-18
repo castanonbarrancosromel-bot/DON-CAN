@@ -4,343 +4,427 @@
   <meta charset="UTF-8"/>
   <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
   <title>Veterinaria Don Can | Cuidamos a Quienes Amas</title>
-  <meta name="description" content="Veterinaria Don Can - Consultas, vacunas, cirugias y analisis para tu mascota en Bolivia. Llamanos al +591 72792102. Cuidamos a quienes amas."/>
+  <meta name="description" content="Veterinaria Don Can — Atención veterinaria premium en Bolivia. Consultas, vacunas, cirugías y análisis. Llámanos: +591 72792102"/>
   <link rel="preconnect" href="https://fonts.googleapis.com"/>
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
-  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700;900&family=Montserrat:wght@400;600;700;800;900&family=Dancing+Script:wght@700&display=swap" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700;900&family=Dancing+Script:wght@600;700&family=Montserrat:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400&display=swap" rel="stylesheet"/>
   <link rel="stylesheet" href="style.css"/>
 </head>
 <body>
 
-<!-- patas flotantes de fondo -->
+<!-- Patitas animadas fondo -->
 <div class="paw-bg" id="pawBg" aria-hidden="true"></div>
 
-<!-- ====== HEADER ====== -->
+<!-- ═══════════════════════════════
+     HEADER
+═══════════════════════════════ -->
 <header id="header">
   <div class="wrap hdr">
-    <div class="logo">
-      <img src="logo.png" alt="Logo Veterinaria Don Can" class="logo-img" id="logoImg"/>
-      <div class="logo-txt">
-        <span class="lc">Veterinaria</span>
-        <span class="ln">Don <em>Can</em></span>
+
+    <!-- Logo -->
+    <a href="#inicio" class="hdr-logo" id="hdrLogo">
+      <div class="hdr-logo-ring">
+        <img src="logo.png" alt="Veterinaria Don Can" class="hdr-logo-img"/>
       </div>
-    </div>
-    <nav id="nav">
+      <div class="hdr-logo-text">
+        <span class="hlt-small">Veterinaria</span>
+        <span class="hlt-big">Don <em>Can</em></span>
+      </div>
+    </a>
+
+    <!-- Nav -->
+    <nav id="nav" role="navigation">
       <ul>
-        <li><a href="#inicio"    class="nl">Inicio</a></li>
-        <li><a href="#servicios" class="nl">Servicios</a></li>
-        <li><a href="#mascotas"  class="nl">Mascotas</a></li>
-        <li><a href="#nosotros"  class="nl">Nosotros</a></li>
-        <li><a href="#contacto"  class="nl">Contacto</a></li>
+        <li><a href="#inicio"    class="nl" id="nl1">Inicio</a></li>
+        <li><a href="#servicios" class="nl" id="nl2">Servicios</a></li>
+        <li><a href="#nosotros"  class="nl" id="nl3">Nosotros</a></li>
+        <li><a href="#mascotas"  class="nl" id="nl4">Mascotas</a></li>
+        <li><a href="#contacto"  class="nl" id="nl5">Contacto</a></li>
       </ul>
     </nav>
-    <a href="tel:+59172792102" class="hbtn" id="hdrBtn">&#128222; +591 72792102</a>
-    <button class="burger" id="burger" aria-label="Menu"><span></span><span></span><span></span></button>
+
+    <!-- CTA -->
+    <a href="tel:+59172792102" class="hdr-cta" id="hdrCta">
+      <span class="hdr-cta-icon">📞</span>
+      <span>+591 72792102</span>
+    </a>
+
+    <!-- Burger -->
+    <button class="burger" id="burger" aria-label="Menú"><span></span><span></span><span></span></button>
   </div>
 </header>
 
-<!-- ====== HERO — Estilo Logo ====== -->
+<!-- ═══════════════════════════════
+     HERO
+═══════════════════════════════ -->
 <section id="inicio" class="hero">
+  <div class="hero-particles" id="particles" aria-hidden="true"></div>
+  <div class="hero-glow" aria-hidden="true"></div>
 
-  <!-- Partículas de fondo doradas -->
-  <div class="particles" id="particles" aria-hidden="true"></div>
+  <div class="hero-inner">
 
-  <!-- Resplandor de fondo -->
-  <div class="hero-radial" aria-hidden="true"></div>
-
-  <!-- Contenido hero VERTICAL centrado (como el logo) -->
-  <div class="hero-center">
-
-    <!-- Logo + anillo dorado -->
-    <div class="hero-logo-wrap" id="heroLogoWrap">
-      <div class="hero-logo-ring">
-        <div class="gold-ring r1"></div>
-        <div class="gold-ring r2"></div>
-        <img src="logo.png" alt="Veterinaria Don Can - Logo oficial" class="hero-logo-img" id="heroLogoImg"/>
-        <!-- Cruz médica + pata (badge inferior derecho del anillo) -->
-        <div class="logo-badge">
-          <svg class="badge-cross" viewBox="0 0 60 60" fill="none">
-            <path d="M23 8h14v15h15v14H37v15H23V37H8V23h15V8z" stroke="url(#gcross)" stroke-width="2.5" stroke-linejoin="round" fill="rgba(200,168,75,0.05)"/>
-            <path d="M12 35 Q22 30 30 34 Q38 38 48 34" stroke="url(#gcross)" stroke-width="2" fill="none" stroke-linecap="round"/>
-            <defs>
-              <linearGradient id="gcross" x1="0" y1="0" x2="1" y2="1">
-                <stop offset="0%" stop-color="#c8a84b"/>
-                <stop offset="50%" stop-color="#f5e2a0"/>
-                <stop offset="100%" stop-color="#9a7a2e"/>
-              </linearGradient>
-            </defs>
-          </svg>
-          <svg class="badge-paw" viewBox="0 0 40 40" fill="none">
-            <ellipse cx="20" cy="26" rx="8.5" ry="6.5" fill="url(#gpaw)"/>
-            <ellipse cx="11.5" cy="18" rx="3.8" ry="4.8" fill="url(#gpaw)"/>
-            <ellipse cx="28.5" cy="18" rx="3.8" ry="4.8" fill="url(#gpaw)"/>
-            <ellipse cx="16.5" cy="12.5" rx="3.2" ry="4.2" fill="url(#gpaw)"/>
-            <ellipse cx="23.5" cy="12.5" rx="3.2" ry="4.2" fill="url(#gpaw)"/>
-            <defs>
-              <linearGradient id="gpaw" x1="0" y1="0" x2="1" y2="1">
-                <stop offset="0%" stop-color="#c8a84b"/>
-                <stop offset="100%" stop-color="#9a7a2e"/>
-              </linearGradient>
-            </defs>
-          </svg>
-        </div>
-      </div>
+    <!-- Logo grande centrado -->
+    <div class="hero-logo" id="heroLogo">
+      <div class="hero-logo-aura"></div>
+      <img src="logo.png" alt="Veterinaria Don Can — Logo Oficial" class="hero-logo-img" id="heroLogoImg"/>
     </div>
 
-    <!-- Divisor dorado -->
-    <div class="hero-divider">
-      <span class="hd-line"></span>
-      <span class="hd-icon">✦</span>
-      <span class="hd-line"></span>
+    <!-- Divider -->
+    <div class="hero-rule">
+      <span class="hr-line"></span>
+      <span class="hr-diamond">◆</span>
+      <span class="hr-line"></span>
     </div>
 
-    <!-- Título estilo logo -->
-    <div class="hero-text">
-      <p class="hero-sub-label">— VETERINARIA —</p>
-      <h1 class="hero-title-logo">Don Can</h1>
-      <p class="hero-slogan">—&bull; CUIDAMOS A QUIENES AMAS &bull;—</p>
-      <div class="hero-btns">
-        <a href="tel:+59172792102" class="btn-gold" id="heroCall">&#128222; Llamar: +591 72792102</a>
-        <a href="#contacto" class="btn-outline" id="heroCita">&#128197; Agendar cita</a>
-      </div>
+    <!-- Textos -->
+    <div class="hero-copy">
+      <p class="hero-eyebrow">— VETERINARIA —</p>
+      <h1 class="hero-brand">Don Can</h1>
+      <p class="hero-tagline">— • Cuidamos a quienes amas • —</p>
     </div>
 
-    <!-- 4 Servicios estilo logo (con divisores verticales) -->
-    <div class="hero-svc">
-      <div class="hsvc-item">
-        <div class="hsvc-ic">
-          <svg viewBox="0 0 40 40" fill="none">
-            <circle cx="20" cy="20" r="18" stroke="#c8a84b" stroke-width="1.8"/>
-            <path d="M14 17 Q14 26 20 26 Q26 26 26 20" stroke="#c8a84b" stroke-width="2" stroke-linecap="round" fill="none"/>
-            <circle cx="26" cy="20" r="3" fill="none" stroke="#c8a84b" stroke-width="1.8"/>
-            <path d="M12 14 L14 17" stroke="#c8a84b" stroke-width="2" stroke-linecap="round"/>
-            <path d="M10 13 L12 14" stroke="#c8a84b" stroke-width="2.2" stroke-linecap="round"/>
-          </svg>
+    <!-- Botones -->
+    <div class="hero-actions">
+      <a href="tel:+59172792102" class="btn-primary" id="heroCall">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1-9.4 0-17-7.6-17-17 0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1L6.6 10.8z"/></svg>
+        Llamar ahora
+      </a>
+      <a href="#contacto" class="btn-secondary" id="heroBook">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+        Agendar cita
+      </a>
+    </div>
+
+    <!-- Servicios bar -->
+    <div class="hero-svcs">
+      <div class="hs-item" id="hsi1">
+        <div class="hs-ico">
+          <svg viewBox="0 0 40 40" fill="none"><circle cx="20" cy="20" r="18" stroke="currentColor" stroke-width="1.6"/><path d="M14 17Q14 26 20 26Q26 26 26 20" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><circle cx="26" cy="20" r="2.5" stroke="currentColor" stroke-width="1.6"/><path d="M11 13L14 17" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
         </div>
-        <span>CONSULTAS</span>
+        <span>Consultas</span>
       </div>
-      <div class="hsvc-div"></div>
-      <div class="hsvc-item">
-        <div class="hsvc-ic">
-          <svg viewBox="0 0 40 40" fill="none">
-            <circle cx="20" cy="20" r="18" stroke="#c8a84b" stroke-width="1.8"/>
-            <line x1="27" y1="13" x2="13" y2="27" stroke="#c8a84b" stroke-width="2" stroke-linecap="round"/>
-            <rect x="16.5" y="10.5" width="5" height="13" rx="2.5" transform="rotate(45 20 17)" fill="none" stroke="#c8a84b" stroke-width="1.8"/>
-            <line x1="11" y1="27" x2="13" y2="29" stroke="#c8a84b" stroke-width="2.2" stroke-linecap="round"/>
-          </svg>
+      <div class="hs-sep"></div>
+      <div class="hs-item" id="hsi2">
+        <div class="hs-ico">
+          <svg viewBox="0 0 40 40" fill="none"><circle cx="20" cy="20" r="18" stroke="currentColor" stroke-width="1.6"/><line x1="27" y1="13" x2="13" y2="27" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><rect x="17" y="11" width="4.5" height="12" rx="2.25" transform="rotate(45 20 17)" fill="none" stroke="currentColor" stroke-width="1.6"/></svg>
         </div>
-        <span>VACUNAS</span>
+        <span>Vacunas</span>
       </div>
-      <div class="hsvc-div"></div>
-      <div class="hsvc-item">
-        <div class="hsvc-ic">
-          <svg viewBox="0 0 40 40" fill="none">
-            <circle cx="20" cy="20" r="18" stroke="#c8a84b" stroke-width="1.8"/>
-            <ellipse cx="20" cy="24" rx="5.5" ry="4" fill="none" stroke="#c8a84b" stroke-width="1.8"/>
-            <ellipse cx="13.5" cy="19.5" rx="2.3" ry="2.8" fill="none" stroke="#c8a84b" stroke-width="1.6"/>
-            <ellipse cx="26.5" cy="19.5" rx="2.3" ry="2.8" fill="none" stroke="#c8a84b" stroke-width="1.6"/>
-            <ellipse cx="17" cy="16" rx="2" ry="2.4" fill="none" stroke="#c8a84b" stroke-width="1.5"/>
-            <ellipse cx="23" cy="16" rx="2" ry="2.4" fill="none" stroke="#c8a84b" stroke-width="1.5"/>
-          </svg>
+      <div class="hs-sep"></div>
+      <div class="hs-item" id="hsi3">
+        <div class="hs-ico">
+          <svg viewBox="0 0 40 40" fill="none"><circle cx="20" cy="20" r="18" stroke="currentColor" stroke-width="1.6"/><ellipse cx="20" cy="24" rx="5" ry="3.8" stroke="currentColor" stroke-width="1.6"/><ellipse cx="13.5" cy="19" rx="2.2" ry="2.7" stroke="currentColor" stroke-width="1.5"/><ellipse cx="26.5" cy="19" rx="2.2" ry="2.7" stroke="currentColor" stroke-width="1.5"/><ellipse cx="17" cy="15.5" rx="1.9" ry="2.3" stroke="currentColor" stroke-width="1.4"/><ellipse cx="23" cy="15.5" rx="1.9" ry="2.3" stroke="currentColor" stroke-width="1.4"/></svg>
         </div>
-        <span>CIRUGIAS</span>
+        <span>Cirugías</span>
       </div>
-      <div class="hsvc-div"></div>
-      <div class="hsvc-item">
-        <div class="hsvc-ic">
-          <svg viewBox="0 0 40 40" fill="none">
-            <circle cx="20" cy="20" r="18" stroke="#c8a84b" stroke-width="1.8"/>
-            <rect x="17" y="10" width="6" height="11" rx="3" fill="none" stroke="#c8a84b" stroke-width="1.8"/>
-            <rect x="18.2" y="21" width="3.6" height="4" fill="none" stroke="#c8a84b" stroke-width="1.5"/>
-            <path d="M15.5 25 L14 29 L26 29 L24.5 25" fill="none" stroke="#c8a84b" stroke-width="1.6" stroke-linejoin="round"/>
-          </svg>
+      <div class="hs-sep"></div>
+      <div class="hs-item" id="hsi4">
+        <div class="hs-ico">
+          <svg viewBox="0 0 40 40" fill="none"><circle cx="20" cy="20" r="18" stroke="currentColor" stroke-width="1.6"/><rect x="17" y="10" width="6" height="10.5" rx="3" stroke="currentColor" stroke-width="1.6"/><rect x="18.3" y="20.5" width="3.4" height="3.5" stroke="currentColor" stroke-width="1.4"/><path d="M15.5 24L14 28L26 28L24.5 24" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/></svg>
         </div>
-        <span>ANALISIS</span>
+        <span>Análisis</span>
       </div>
     </div>
 
   </div>
-
 </section>
 
-<!-- ====== SERVICIOS ====== -->
+<!-- ═══════════════════════════════
+     SERVICIOS
+═══════════════════════════════ -->
 <section id="servicios" class="sec">
   <div class="wrap">
-    <div class="sec-hd">
-      <span class="stag">¿Qué hacemos?</span>
-      <h2 class="stitle">Nuestros <span class="co">Servicios</span></h2>
-      <p class="ssub">Atención completa y profesional para todas las mascotas</p>
+    <div class="sec-head">
+      <span class="sec-tag">¿Qué hacemos?</span>
+      <h2 class="sec-title">Nuestros <span class="gold">Servicios</span></h2>
+      <p class="sec-sub">Atención completa y profesional para todas las mascotas de tu familia</p>
     </div>
-    <div class="grid3">
-      <div class="card rev" id="c1">
-        <div class="card-glow"></div>
-        <div class="ci">
-          <svg viewBox="0 0 60 60" fill="none" width="56" height="56"><circle cx="30" cy="30" r="28" stroke="#c8a84b" stroke-width="1.5" opacity="0.4"/><path d="M20 30h20M30 20v20" stroke="#c8a84b" stroke-width="3" stroke-linecap="round"/></svg>
+
+    <div class="svc-grid">
+      <div class="svc-card" id="sc1">
+        <div class="svc-card-shine"></div>
+        <div class="svc-icon">
+          <svg viewBox="0 0 60 60" fill="none"><path d="M22 30Q22 40 30 40Q38 40 38 32" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/><circle cx="38" cy="32" r="4" stroke="currentColor" stroke-width="2.5"/><path d="M17 21L22 27" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/></svg>
         </div>
         <h3>Consulta General</h3>
-        <p>Revisión completa de salud, diagnóstico y tratamiento personalizado para tu mascota.</p>
-        <span class="cpw">&#128062;</span>
+        <p>Revisión completa de salud, diagnóstico preciso y tratamiento personalizado.</p>
+        <div class="svc-card-footer">🐾</div>
       </div>
-      <div class="card rev" id="c2">
-        <div class="card-glow"></div>
-        <div class="ci">
-          <svg viewBox="0 0 60 60" fill="none" width="56" height="56"><circle cx="30" cy="30" r="28" stroke="#c8a84b" stroke-width="1.5" opacity="0.4"/><path d="M20 30l6 6 14-14" stroke="#c8a84b" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg>
+
+      <div class="svc-card" id="sc2">
+        <div class="svc-card-shine"></div>
+        <div class="svc-icon">
+          <svg viewBox="0 0 60 60" fill="none"><line x1="42" y1="18" x2="18" y2="42" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/><rect x="24" y="14" width="7" height="20" rx="3.5" transform="rotate(45 30 24)" fill="none" stroke="currentColor" stroke-width="2.5"/><path d="M14 42L18 46" stroke="currentColor" stroke-width="3" stroke-linecap="round"/></svg>
         </div>
         <h3>Vacunación</h3>
-        <p>Programa de vacunas al día para perros, gatos y otras mascotas. Protección garantizada.</p>
-        <span class="cpw">&#128062;</span>
+        <p>Programa completo de vacunas para perros, gatos y otras mascotas.</p>
+        <div class="svc-card-footer">🐾</div>
       </div>
-      <div class="card feat rev" id="c3">
-        <div class="card-glow"></div>
-        <div class="ci">
-          <svg viewBox="0 0 60 60" fill="none" width="56" height="56"><circle cx="30" cy="30" r="28" stroke="#c8a84b" stroke-width="1.5" opacity="0.4"/><path d="M22 30h16M30 22v16" stroke="#c8a84b" stroke-width="2.5" stroke-linecap="round"/><circle cx="30" cy="30" r="6" fill="#c8a84b" fill-opacity="0.15"/></svg>
+
+      <div class="svc-card feat" id="sc3">
+        <div class="svc-card-shine"></div>
+        <div class="svc-icon">
+          <svg viewBox="0 0 60 60" fill="none"><path d="M20 30h20M30 20v20" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/><path d="M24 14h12v10h10v12H36v10H24V36H14V24h10V14z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg>
         </div>
         <h3>Cirugías</h3>
-        <p>Procedimientos quirúrgicos con equipos modernos y veterinarios altamente especializados.</p>
-        <span class="cpw">&#128062;</span>
+        <p>Procedimientos quirúrgicos con tecnología de vanguardia y especialistas certificados.</p>
+        <div class="svc-card-footer">🐾</div>
       </div>
-      <div class="card rev" id="c4">
-        <div class="card-glow"></div>
-        <div class="ci">
-          <svg viewBox="0 0 60 60" fill="none" width="56" height="56"><circle cx="30" cy="30" r="28" stroke="#c8a84b" stroke-width="1.5" opacity="0.4"/><path d="M18 38l6-12 6 6 6-12" stroke="#c8a84b" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+
+      <div class="svc-card" id="sc4">
+        <div class="svc-card-shine"></div>
+        <div class="svc-icon">
+          <svg viewBox="0 0 60 60" fill="none"><rect x="24" y="12" width="12" height="18" rx="6" stroke="currentColor" stroke-width="2.5"/><rect x="26.5" y="30" width="7" height="7" stroke="currentColor" stroke-width="2"/><path d="M22 37L19 46L41 46L38 37" stroke="currentColor" stroke-width="2.5" stroke-linejoin="round"/></svg>
         </div>
         <h3>Análisis Clínicos</h3>
-        <p>Laboratorio completo: sangre, orina, radiografías y ecografías para diagnóstico preciso.</p>
-        <span class="cpw">&#128062;</span>
+        <p>Laboratorio completo: sangre, orina, radiografías y ecografías.</p>
+        <div class="svc-card-footer">🐾</div>
       </div>
-      <div class="card rev" id="c5">
-        <div class="card-glow"></div>
-        <div class="ci">&#9986;</div>
+
+      <div class="svc-card" id="sc5">
+        <div class="svc-card-shine"></div>
+        <div class="svc-icon">
+          <svg viewBox="0 0 60 60" fill="none"><path d="M20 40 C20 28 40 28 40 40" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/><circle cx="30" cy="22" r="8" stroke="currentColor" stroke-width="2.5"/><path d="M25 22h10M30 17v10" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+        </div>
         <h3>Estética y Grooming</h3>
-        <p>Baño, corte de pelo y uñas. Tu mascota siempre hermosa y bien cuidada.</p>
-        <span class="cpw">&#128062;</span>
+        <p>Baño, corte y cuidado. Tu mascota siempre impecable y feliz.</p>
+        <div class="svc-card-footer">🐾</div>
       </div>
-      <div class="card rev" id="c6">
-        <div class="card-glow"></div>
-        <div class="ci">&#128680;</div>
-        <h3>Emergencias</h3>
-        <p>Atención de urgencias para cuando tu mascota más lo necesita. Llámanos al +591 72792102.</p>
-        <span class="cpw">&#128062;</span>
+
+      <div class="svc-card urgent" id="sc6">
+        <div class="svc-card-shine"></div>
+        <div class="svc-icon">
+          <svg viewBox="0 0 60 60" fill="none"><path d="M30 14L30 30" stroke="currentColor" stroke-width="3" stroke-linecap="round"/><circle cx="30" cy="38" r="2.5" fill="currentColor"/><path d="M16 10L44 10L50 30L44 50L16 50L10 30Z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg>
+        </div>
+        <h3>Emergencias 24/7</h3>
+        <p>Atención de urgencias inmediata. Llámanos: <strong>+591 72792102</strong></p>
+        <div class="svc-card-footer">🚨</div>
       </div>
     </div>
   </div>
 </section>
 
-<!-- ====== MASCOTAS ====== -->
-<section id="mascotas" class="sec secdark">
-  <div class="wrap">
-    <div class="sec-hd">
-      <span class="stag">Con amor y experiencia</span>
-      <h2 class="stitle">Atendemos a <span class="ct">todas</span> tus mascotas</h2>
-      <p class="ssub">Cada animal merece cuidado especial y atención de calidad</p>
-    </div>
-    <div class="pgrid">
-      <div class="pet rev" id="p1"><div class="pe">&#128021;</div><div class="pn">Perros</div><div class="pp">&#128062;&#128062;&#128062;</div></div>
-      <div class="pet rev" id="p2"><div class="pe">&#128008;</div><div class="pn">Gatos</div><div class="pp">&#128062;&#128062;&#128062;</div></div>
-      <div class="pet rev" id="p3"><div class="pe">&#128007;</div><div class="pn">Conejos</div><div class="pp">&#128062;&#128062;&#128062;</div></div>
-      <div class="pet rev" id="p4"><div class="pe">&#129380;</div><div class="pn">Aves</div><div class="pp">&#128062;&#128062;&#128062;</div></div>
-      <div class="pet rev" id="p5"><div class="pe">&#128057;</div><div class="pn">Hamsters</div><div class="pp">&#128062;&#128062;&#128062;</div></div>
-      <div class="pet rev" id="p6"><div class="pe">&#128062;</div><div class="pn">Y más...</div><div class="pp">&#128062;&#128062;&#128062;</div></div>
-    </div>
-  </div>
-</section>
-
-<!-- ====== STATS ====== -->
-<section class="stats-sec">
+<!-- ═══════════════════════════════
+     STATS
+═══════════════════════════════ -->
+<section class="stats">
   <div class="wrap stats-row">
-    <div class="st rev"><span class="sn" data-t="1200">0</span><span class="sp">+</span><span class="sl">Mascotas atendidas</span></div>
-    <div class="sdiv">&#128062;</div>
-    <div class="st rev"><span class="sn" data-t="8">0</span><span class="sp">+</span><span class="sl">Años de experiencia</span></div>
-    <div class="sdiv">&#128062;</div>
-    <div class="st rev"><span class="sn" data-t="5">0</span><span class="sl">Veterinarios especializados</span></div>
-    <div class="sdiv">&#128062;</div>
-    <div class="st rev"><span class="sn" data-t="100">0</span><span class="sp">%</span><span class="sl">Clientes satisfechos</span></div>
-  </div>
-</section>
-
-<!-- ====== NOSOTROS ====== -->
-<section id="nosotros" class="sec">
-  <div class="wrap nos">
-    <div class="nos-img rev">
-      <div class="nos-frame">
-        <img src="logo.png" alt="Veterinaria Don Can" class="nos-logo" id="nosLogo"/>
-        <div class="nos-cross">&#10010;</div>
-        <div class="nos-steth">&#129514;</div>
-        <div class="nos-paw1">&#128062;</div>
-        <div class="nos-paw2">&#128062;</div>
-      </div>
-      <div class="nos-badge"><span class="nb-n">8</span><span class="nb-t">Años de<br/>confianza</span></div>
+    <div class="stat-item rev" id="st1">
+      <span class="stat-num" data-t="1200">0</span>
+      <span class="stat-plus">+</span>
+      <span class="stat-label">Mascotas atendidas</span>
     </div>
-    <div class="nos-txt rev">
-      <span class="stag">¿Quiénes somos?</span>
-      <h2 class="stitle">Amor y <span class="co">profesionalismo</span><br/>en cada consulta</h2>
-      <p class="nosp">En la <strong>Veterinaria Don Can</strong> creemos que las mascotas son parte de la familia. Brindamos atención médica de alta calidad, con tecnología moderna y sobre todo, con el amor que tu compañero de vida merece.</p>
-      <div class="vals">
-        <div class="val" id="v1"><span class="vi">&#10084;&#65039;</span><div><strong>Amor</strong><p>Tratamos a cada mascota como si fuera nuestra</p></div></div>
-        <div class="val" id="v2"><span class="vi">&#128737;&#65039;</span><div><strong>Cuidado</strong><p>Protocolos de seguridad en todos los procedimientos</p></div></div>
-        <div class="val" id="v3"><span class="vi">&#128138;</span><div><strong>Salud</strong><p>Diagnósticos precisos y tratamientos efectivos</p></div></div>
-      </div>
-      <a href="tel:+59172792102" class="btn-gold" id="nosCall">&#128222; Llamar: +591 72792102</a>
+    <div class="stat-div"></div>
+    <div class="stat-item rev" id="st2">
+      <span class="stat-num" data-t="8">0</span>
+      <span class="stat-plus">+</span>
+      <span class="stat-label">Años de experiencia</span>
+    </div>
+    <div class="stat-div"></div>
+    <div class="stat-item rev" id="st3">
+      <span class="stat-num" data-t="5">0</span>
+      <span class="stat-label">Especialistas</span>
+    </div>
+    <div class="stat-div"></div>
+    <div class="stat-item rev" id="st4">
+      <span class="stat-num" data-t="100">0</span>
+      <span class="stat-plus">%</span>
+      <span class="stat-label">Clientes satisfechos</span>
     </div>
   </div>
 </section>
 
-<!-- ====== TESTIMONIOS ====== -->
-<section class="sec secdark">
+<!-- ═══════════════════════════════
+     NOSOTROS
+═══════════════════════════════ -->
+<section id="nosotros" class="sec sec-dark">
+  <div class="wrap about-grid">
+
+    <!-- Visual -->
+    <div class="about-visual rev" id="abv">
+      <div class="about-logo-wrap">
+        <div class="about-logo-glow"></div>
+        <img src="logo.png" alt="Veterinaria Don Can" class="about-logo-img"/>
+        <div class="about-badge">
+          <span class="ab-num">8</span>
+          <span class="ab-txt">Años de<br>confianza</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Texto -->
+    <div class="about-text rev" id="abt">
+      <span class="sec-tag">¿Quiénes somos?</span>
+      <h2 class="sec-title">Amor y <span class="gold">profesionalismo</span><br>en cada consulta</h2>
+      <p class="about-desc">En la <strong>Veterinaria Don Can</strong> creemos que las mascotas son parte de la familia. Brindamos atención de alta calidad, con tecnología moderna y el amor que tu compañero de vida merece.</p>
+
+      <div class="values">
+        <div class="value-item" id="vi1">
+          <div class="value-icon">❤️</div>
+          <div>
+            <strong>Amor</strong>
+            <p>Cada mascota recibe el cuidado que merece</p>
+          </div>
+        </div>
+        <div class="value-item" id="vi2">
+          <div class="value-icon">🛡️</div>
+          <div>
+            <strong>Seguridad</strong>
+            <p>Protocolos de alta calidad en cada procedimiento</p>
+          </div>
+        </div>
+        <div class="value-item" id="vi3">
+          <div class="value-icon">🏆</div>
+          <div>
+            <strong>Excelencia</strong>
+            <p>Diagnósticos precisos, resultados comprobados</p>
+          </div>
+        </div>
+      </div>
+
+      <a href="tel:+59172792102" class="btn-primary" id="aboutCall">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1-9.4 0-17-7.6-17-17 0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1L6.6 10.8z"/></svg>
+        Llamar ahora
+      </a>
+    </div>
+
+  </div>
+</section>
+
+<!-- ═══════════════════════════════
+     MASCOTAS
+═══════════════════════════════ -->
+<section id="mascotas" class="sec">
   <div class="wrap">
-    <div class="sec-hd">
-      <span class="stag">Lo que dicen nuestros clientes</span>
-      <h2 class="stitle">Testimonios <span class="ct">&#128062;</span></h2>
+    <div class="sec-head">
+      <span class="sec-tag">Con amor y experiencia</span>
+      <h2 class="sec-title">Atendemos a <span class="gold">todas</span> tus mascotas</h2>
     </div>
-    <div class="grid3">
-      <div class="tcard rev" id="t1"><div class="ts">&#11088;&#11088;&#11088;&#11088;&#11088;</div><p>"Llevé a mi perrito Max muy asustado y el equipo de Don Can lo atendió con tanto cariño. ¡Excelente servicio!"</p><div class="ta"><span class="tav">&#128021;</span><div><strong>María García</strong><small>Dueña de Max, Yorkshire Terrier</small></div></div></div>
-      <div class="tcard rev" id="t2"><div class="ts">&#11088;&#11088;&#11088;&#11088;&#11088;</div><p>"Mi gatita Luna necesitó cirugía y quedé muy tranquila. Los veterinarios son muy profesionales y cariñosos."</p><div class="ta"><span class="tav">&#128008;</span><div><strong>Carlos Mendoza</strong><small>Papá de Luna, gata persa</small></div></div></div>
-      <div class="tcard rev" id="t3"><div class="ts">&#11088;&#11088;&#11088;&#11088;&#11088;</div><p>"Las vacunas de mi conejo siempre aquí. Personal amable, instalaciones limpias y precios accesibles."</p><div class="ta"><span class="tav">&#128007;</span><div><strong>Ana Torres</strong><small>Dueña de Pipo, conejo enano</small></div></div></div>
+    <div class="pets-grid">
+      <div class="pet-card rev" id="pc1"><span class="pet-emoji">🐕</span><span class="pet-name">Perros</span></div>
+      <div class="pet-card rev" id="pc2"><span class="pet-emoji">🐈</span><span class="pet-name">Gatos</span></div>
+      <div class="pet-card rev" id="pc3"><span class="pet-emoji">🐇</span><span class="pet-name">Conejos</span></div>
+      <div class="pet-card rev" id="pc4"><span class="pet-emoji">🦜</span><span class="pet-name">Aves</span></div>
+      <div class="pet-card rev" id="pc5"><span class="pet-emoji">🐹</span><span class="pet-name">Hamsters</span></div>
+      <div class="pet-card rev" id="pc6"><span class="pet-emoji">🐾</span><span class="pet-name">Y más…</span></div>
     </div>
   </div>
 </section>
 
-<!-- ====== CONTACTO ====== -->
+<!-- ═══════════════════════════════
+     TESTIMONIOS
+═══════════════════════════════ -->
+<section class="sec sec-dark">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="sec-tag">Lo que dicen nuestros clientes</span>
+      <h2 class="sec-title">Testimonios <span class="gold">🐾</span></h2>
+    </div>
+    <div class="testi-grid">
+      <div class="testi-card rev" id="tc1">
+        <div class="testi-stars">★★★★★</div>
+        <p>"Llevé a mi perrito Max muy asustado y el equipo de Don Can lo atendió con tanto cariño. ¡Excelente servicio!"</p>
+        <div class="testi-author">
+          <span class="testi-avatar">🐕</span>
+          <div><strong>María García</strong><small>Dueña de Max, Yorkshire Terrier</small></div>
+        </div>
+      </div>
+      <div class="testi-card rev" id="tc2">
+        <div class="testi-stars">★★★★★</div>
+        <p>"Mi gatita Luna necesitó cirugía y quedé muy tranquila. Los veterinarios son muy profesionales y cariñosos."</p>
+        <div class="testi-author">
+          <span class="testi-avatar">🐈</span>
+          <div><strong>Carlos Mendoza</strong><small>Papá de Luna, gata persa</small></div>
+        </div>
+      </div>
+      <div class="testi-card rev" id="tc3">
+        <div class="testi-stars">★★★★★</div>
+        <p>"Siempre traigo a mi conejo aquí. Personal amable, instalaciones limpias y precios muy accesibles."</p>
+        <div class="testi-author">
+          <span class="testi-avatar">🐇</span>
+          <div><strong>Ana Torres</strong><small>Dueña de Pipo, conejo enano</small></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════
+     CONTACTO
+═══════════════════════════════ -->
 <section id="contacto" class="sec">
-  <div class="wrap cgrid">
-    <div class="cinfo rev">
-      <span class="stag">Estamos para ti</span>
-      <h2 class="stitle">Contáctanos <span class="co">hoy</span></h2>
-      <p class="csub">Tu mascota no puede esperar. Llámanos y te atendemos de inmediato.</p>
-      <div class="clist">
-        <a href="tel:+59172792102" class="citem" id="cPhone">
-          <span class="cic">&#128222;</span>
+  <div class="wrap contact-grid">
+
+    <!-- Info -->
+    <div class="contact-info rev" id="ci">
+      <span class="sec-tag">Estamos para ti</span>
+      <h2 class="sec-title">Contáctanos <span class="gold">hoy</span></h2>
+      <p class="contact-sub">Tu mascota no puede esperar. Llámanos y te atendemos de inmediato.</p>
+
+      <div class="contact-items">
+        <a href="tel:+59172792102" class="contact-item" id="ciPhone">
+          <div class="contact-item-icon">📞</div>
           <div><strong>Teléfono</strong><span>+591 72792102</span></div>
         </a>
-        <div class="citem"><span class="cic">&#128336;</span><div><strong>Horario</strong><span>Lunes - Sábado: 8:00 AM - 7:00 PM</span></div></div>
-        <div class="citem"><span class="cic">&#128205;</span><div><strong>Ubicación</strong><span>Bolivia — Tu mascota, nuestra prioridad</span></div></div>
-        <div class="citem"><span class="cic">&#128680;</span><div><strong>Emergencias</strong><span>Llama al +591 72792102 — atención inmediata</span></div></div>
+        <div class="contact-item">
+          <div class="contact-item-icon">🕐</div>
+          <div><strong>Horario</strong><span>Lun – Sáb: 8:00 AM – 7:00 PM</span></div>
+        </div>
+        <div class="contact-item">
+          <div class="contact-item-icon">📍</div>
+          <div><strong>Ubicación</strong><span>Bolivia — Tu mascota, nuestra prioridad</span></div>
+        </div>
+        <div class="contact-item urgent-item">
+          <div class="contact-item-icon">🚨</div>
+          <div><strong>Emergencias</strong><span>Llama al +591 72792102 — Atención inmediata</span></div>
+        </div>
       </div>
-      <div class="socs">
-        <a href="#" class="sob" id="sfb">&#128248; Facebook</a>
-        <a href="#" class="sob" id="sig">&#128247; Instagram</a>
-        <a href="https://wa.me/59172792102" class="sob wa" id="swa">&#128172; WhatsApp</a>
+
+      <div class="social-links">
+        <a href="#" class="social-btn" id="sfb">📘 Facebook</a>
+        <a href="#" class="social-btn" id="sig">📸 Instagram</a>
+        <a href="https://wa.me/59172792102" class="social-btn wa" id="swa">💬 WhatsApp</a>
       </div>
     </div>
-    <div class="fwrap rev">
+
+    <!-- Formulario -->
+    <div class="contact-form-wrap rev" id="cfw">
       <form id="form" novalidate>
-        <h3>Agendar cita &#128197;</h3>
-        <div class="fg"><label for="fn">Tu nombre</label><input type="text" id="fn" placeholder="Ej: María García" required/></div>
-        <div class="fg"><label for="ft">Teléfono</label><input type="tel" id="ft" placeholder="Tu número de contacto" required/></div>
-        <div class="fg"><label for="fm">Nombre de tu mascota</label><input type="text" id="fm" placeholder="Ej: Max" required/></div>
-        <div class="fg"><label for="fti">Tipo de mascota</label>
-          <select id="fti" required>
-            <option value="">Seleccionar...</option>
-            <option value="perro">Perro</option>
-            <option value="gato">Gato</option>
-            <option value="conejo">Conejo</option>
-            <option value="ave">Ave</option>
-            <option value="otro">Otro</option>
-          </select>
+        <div class="form-header">
+          <h3>Agendar cita</h3>
+          <p>Completa el formulario y te contactamos pronto</p>
         </div>
-        <div class="fg"><label for="fs">Servicio requerido</label>
+        <div class="form-row">
+          <div class="fg">
+            <label for="fn">Tu nombre</label>
+            <input type="text" id="fn" placeholder="Ej: María García" required/>
+          </div>
+          <div class="fg">
+            <label for="ft">Teléfono</label>
+            <input type="tel" id="ft" placeholder="Tu número" required/>
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="fg">
+            <label for="fm">Nombre de tu mascota</label>
+            <input type="text" id="fm" placeholder="Ej: Max" required/>
+          </div>
+          <div class="fg">
+            <label for="fti">Tipo de mascota</label>
+            <select id="fti" required>
+              <option value="">Seleccionar…</option>
+              <option value="perro">Perro</option>
+              <option value="gato">Gato</option>
+              <option value="conejo">Conejo</option>
+              <option value="ave">Ave</option>
+              <option value="otro">Otro</option>
+            </select>
+          </div>
+        </div>
+        <div class="fg">
+          <label for="fs">Servicio requerido</label>
           <select id="fs" required>
-            <option value="">Seleccionar...</option>
+            <option value="">Seleccionar…</option>
             <option value="consulta">Consulta general</option>
             <option value="vacuna">Vacunación</option>
             <option value="cirugia">Cirugía</option>
@@ -349,40 +433,83 @@
             <option value="emergencia">Emergencia</option>
           </select>
         </div>
-        <div class="fg"><label for="fmsg">Mensaje adicional</label><textarea id="fmsg" rows="3" placeholder="Cuéntanos sobre tu mascota..."></textarea></div>
-        <button type="submit" class="btn-gold bfull" id="fsub">&#128062; Solicitar cita</button>
-        <div class="fok" id="fok" style="display:none;"></div>
+        <div class="fg">
+          <label for="fmsg">Mensaje</label>
+          <textarea id="fmsg" rows="3" placeholder="Cuéntanos sobre tu mascota…"></textarea>
+        </div>
+        <button type="submit" class="btn-primary btn-full" id="fsub">
+          🐾 Solicitar cita
+        </button>
+        <div class="form-ok" id="fok" style="display:none;"></div>
       </form>
     </div>
+
   </div>
 </section>
 
-<!-- ====== FOOTER ====== -->
+<!-- ═══════════════════════════════
+     FOOTER
+═══════════════════════════════ -->
 <footer class="footer">
-  <div class="wrap fgrid">
-    <div class="fl">
-      <img src="logo.png" alt="Veterinaria Don Can" class="footer-logo"/>
-      <span class="lc">Veterinaria</span>
-      <span class="ln">Don <em>Can</em></span>
-      <p>Amor &bull; Cuidado &bull; Salud &#128062;</p>
+  <div class="footer-glow"></div>
+  <div class="wrap footer-inner">
+
+    <div class="footer-brand">
+      <div class="footer-logo-wrap">
+        <img src="logo.png" alt="Veterinaria Don Can" class="footer-logo-img"/>
+      </div>
+      <div class="footer-brand-text">
+        <span class="footer-small">Veterinaria</span>
+        <span class="footer-big">Don <em>Can</em></span>
+      </div>
+      <p class="footer-motto">Amor · Cuidado · Salud 🐾</p>
     </div>
-    <div class="fc"><h4>Servicios</h4><ul><li><a href="#servicios">Consulta General</a></li><li><a href="#servicios">Vacunación</a></li><li><a href="#servicios">Cirugías</a></li><li><a href="#servicios">Análisis Clínicos</a></li></ul></div>
-    <div class="fc"><h4>Contacto</h4><p><a href="tel:+59172792102">&#128222; +591 72792102</a></p><p>&#128336; Lun-Sab: 8AM - 7PM</p><p><a href="https://wa.me/59172792102">&#128172; WhatsApp</a></p></div>
+
+    <div class="footer-col">
+      <h4>Servicios</h4>
+      <ul>
+        <li><a href="#servicios">Consulta General</a></li>
+        <li><a href="#servicios">Vacunación</a></li>
+        <li><a href="#servicios">Cirugías</a></li>
+        <li><a href="#servicios">Análisis Clínicos</a></li>
+        <li><a href="#servicios">Grooming</a></li>
+        <li><a href="#servicios">Emergencias</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-col">
+      <h4>Contacto</h4>
+      <p><a href="tel:+59172792102">📞 +591 72792102</a></p>
+      <p>🕐 Lun–Sáb: 8AM – 7PM</p>
+      <p><a href="https://wa.me/59172792102">💬 WhatsApp</a></p>
+      <p>📍 Bolivia</p>
+    </div>
+
   </div>
-  <div class="fbot"><p>&copy; 2026 Veterinaria Don Can &mdash; Todos los derechos reservados &#128062; &mdash; <em>Cuidamos a quienes amas</em></p></div>
+  <div class="footer-bottom">
+    <p>© 2026 Veterinaria Don Can — Todos los derechos reservados 🐾 <em>Cuidamos a quienes amas</em></p>
+  </div>
 </footer>
 
-<!-- Botón flotante WhatsApp -->
+<!-- WhatsApp flotante -->
 <a href="https://wa.me/59172792102" class="fab-wa" id="fabWa" aria-label="WhatsApp">
-  <svg viewBox="0 0 32 32" fill="none" width="28" height="28"><path d="M16 2C8.268 2 2 8.268 2 16c0 2.468.67 4.782 1.84 6.77L2 30l7.41-1.82A13.94 13.94 0 0016 30c7.732 0 14-6.268 14-14S23.732 2 16 2z" fill="#25d366"/><path d="M21.7 19.1c-.3-.15-1.77-.87-2.04-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.94 1.17-.17.2-.34.22-.64.07-.3-.15-1.26-.46-2.4-1.47-.89-.79-1.49-1.77-1.66-2.07-.17-.3-.02-.46.13-.61.13-.13.3-.34.45-.51.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.07-.15-.67-1.62-.92-2.22-.24-.58-.49-.5-.67-.51-.17-.01-.37-.01-.57-.01-.2 0-.52.07-.79.37-.27.3-1.04 1.02-1.04 2.49s1.07 2.89 1.22 3.09c.15.2 2.1 3.2 5.09 4.49.71.31 1.27.49 1.7.63.71.23 1.36.2 1.87.12.57-.09 1.77-.72 2.02-1.42.25-.7.25-1.3.17-1.42-.07-.1-.27-.17-.57-.32z" fill="white"/></svg>
+  <svg viewBox="0 0 32 32" width="26" height="26" fill="none">
+    <path d="M16 2C8.268 2 2 8.268 2 16c0 2.468.67 4.782 1.84 6.77L2 30l7.41-1.82A13.94 13.94 0 0016 30c7.732 0 14-6.268 14-14S23.732 2 16 2z" fill="#25d366"/>
+    <path d="M21.7 19.1c-.3-.15-1.77-.87-2.04-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.94 1.17-.17.2-.34.22-.64.07-.3-.15-1.26-.46-2.4-1.47-.89-.79-1.49-1.77-1.66-2.07-.17-.3-.02-.46.13-.61.13-.13.3-.34.45-.51.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.07-.15-.67-1.62-.92-2.22-.24-.58-.49-.5-.67-.51-.17-.01-.37-.01-.57-.01-.2 0-.52.07-.79.37-.27.3-1.04 1.02-1.04 2.49s1.07 2.89 1.22 3.09c.15.2 2.1 3.2 5.09 4.49.71.31 1.27.49 1.7.63.71.23 1.36.2 1.87.12.57-.09 1.77-.72 2.02-1.42.25-.7.25-1.3.17-1.42-.07-.1-.27-.17-.57-.32z" fill="white"/>
+  </svg>
   <span class="fab-tip">WhatsApp</span>
 </a>
 
-<!-- Botón flotante llamada -->
-<a href="tel:+59172792102" class="fab" id="fab" aria-label="Llamar">&#128222;<span class="ftip">+591 72792102</span></a>
+<!-- Llamada flotante -->
+<a href="tel:+59172792102" class="fab-call" id="fabCall" aria-label="Llamar">
+  <svg viewBox="0 0 24 24" width="24" height="24" fill="currentColor"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1-9.4 0-17-7.6-17-17 0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1L6.6 10.8z"/></svg>
+  <span class="fab-tip">+591 72792102</span>
+</a>
 
-<!-- Botón subir -->
-<button class="upbtn" id="upbtn" aria-label="Subir">&#128062;</button>
+<!-- Subir -->
+<button class="fab-up" id="fabUp" aria-label="Subir">
+  <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M18 15l-6-6-6 6"/></svg>
+</button>
 
 <script src="app.js"></script>
 </body>
