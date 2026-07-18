@@ -38,18 +38,29 @@ ul    { list-style: none; }
 img   { max-width: 100%; display: block; }
 .wrap { max-width: 1200px; margin: 0 auto; padding: 0 24px; }
 
-/* ── PATAS FLOTANTES FONDO ── */
-.paw-bg { position: fixed; inset: 0; pointer-events: none; z-index: 0; overflow: hidden; }
-.pf {
-  position: absolute; opacity: .03; user-select: none;
-  font-size: 1.8rem; animation: fpaw linear infinite;
-  color: var(--gold);
+/* ── PATITAS CAMINANDO — fondo completo ── */
+.paw-bg {
+  position: fixed; inset: 0;
+  pointer-events: none; z-index: 0;
+  overflow: hidden;
 }
-@keyframes fpaw {
-  0%   { transform: translateY(110vh) rotate(0deg);    opacity: 0; }
-  10%  { opacity: .05; }
-  90%  { opacity: .05; }
-  100% { transform: translateY(-120px) rotate(360deg); opacity: 0; }
+.pf {
+  position: absolute;
+  user-select: none; pointer-events: none;
+  color: var(--gold);
+  font-size: 1.4rem;
+  transform: rotate(var(--rot, 45deg));
+  animation: pawStep ease-in-out infinite;
+  opacity: 0;
+  filter: drop-shadow(0 0 4px rgba(200,168,75,.3));
+}
+@keyframes pawStep {
+  0%   { opacity: 0;             transform: rotate(var(--rot, 45deg)) scale(0.6); }
+  12%  { opacity: var(--mop, .06); transform: rotate(var(--rot, 45deg)) scale(1.05); }
+  30%  { opacity: var(--mop, .06); transform: rotate(var(--rot, 45deg)) scale(1); }
+  70%  { opacity: var(--mop, .06); transform: rotate(var(--rot, 45deg)) scale(1); }
+  88%  { opacity: var(--mop, .06); transform: rotate(var(--rot, 45deg)) scale(1.05); }
+  100% { opacity: 0;             transform: rotate(var(--rot, 45deg)) scale(0.6); }
 }
 
 /* ================================================

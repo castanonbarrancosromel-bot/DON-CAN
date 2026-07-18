@@ -2,22 +2,67 @@
    VETERINARIA DON CAN — app.js
    ==================================== */
 
-/* ── Patas flotantes de fondo ── */
+/* ── Patitas caminando por toda la página ── */
 (function createPaws() {
   const bg = document.getElementById('pawBg');
   if (!bg) return;
-  for (let i = 0; i < 14; i++) {
-    const pf = document.createElement('div');
-    pf.className = 'pf';
-    pf.textContent = '🐾';
-    pf.style.cssText = `
-      left: ${Math.random() * 100}%;
-      animation-duration: ${10 + Math.random() * 16}s;
-      animation-delay: ${-Math.random() * 18}s;
-      font-size: ${1.2 + Math.random() * 1.6}rem;
-    `;
-    bg.appendChild(pf);
-  }
+
+  /* Trails de caminata — cada trail = una senda diagonal de patitas */
+  const trails = [
+    { x:  5, y:  8, dir:  40, sz: 1.5, dur: 7  },
+    { x: 18, y: 32, dir: -35, sz: 1.2, dur: 9  },
+    { x: 38, y:  3, dir:  55, sz: 1.7, dur: 6  },
+    { x: 55, y: 18, dir:  30, sz: 1.1, dur: 10 },
+    { x: 72, y: 45, dir: -48, sz: 1.6, dur: 8  },
+    { x: 84, y:  7, dir:  50, sz: 1.0, dur: 11 },
+    { x: 12, y: 58, dir:  38, sz: 1.4, dur: 7  },
+    { x: 48, y: 68, dir: -22, sz: 1.3, dur: 9  },
+    { x: 28, y: 82, dur:  52, sz: 1.1, dur: 8  },
+    { x: 68, y: 78, dir: -42, sz: 1.7, dur: 6  },
+    { x: 91, y: 38, dir:  28, sz: 1.2, dur: 10 },
+    { x: 14, y: 44, dir: -55, sz: 1.5, dur: 7  },
+    { x: 60, y: 55, dir:  45, sz: 1.3, dur: 9  },
+    { x: 33, y: 20, dir: -30, sz: 1.6, dur: 8  },
+    { x: 78, y: 25, dir:  60, sz: 1.0, dur: 11 },
+    { x:  3, y: 75, dir:  35, sz: 1.4, dur: 6  },
+  ];
+
+  trails.forEach((trail, t) => {
+    const pawsInTrail = 4 + Math.floor(Math.random() * 3); // 4–6 patitas por trail
+    const dir = trail.dir || 45;
+    const baseDelay = -(Math.random() * 18);
+
+    for (let p = 0; p < pawsInTrail; p++) {
+      const pf = document.createElement('div');
+      pf.className = 'pf';
+      pf.textContent = '🐾';
+
+      /* Offset por paso en la dirección del trail */
+      const rad = (dir * Math.PI) / 180;
+      const stepX = Math.cos(rad) * 5.5;
+      const stepY = Math.sin(rad) * 4.5;
+      /* Alternancia izquierda/derecha como caminar real */
+      const side = (p % 2 === 0 ? -2 : 2);
+      const sideX = Math.cos(rad + Math.PI / 2) * side;
+      const sideY = Math.sin(rad + Math.PI / 2) * side;
+
+      const px = Math.max(1, Math.min(94, trail.x + p * stepX + sideX));
+      const py = Math.max(1, Math.min(94, trail.y + p * stepY + sideY));
+      const opacity = 0.05 + Math.random() * 0.07;
+      const pawDir = dir + (p % 2 === 0 ? -8 : 8); /* ligera rotación alternada */
+
+      pf.style.cssText = `
+        left: ${px}%;
+        top: ${py}%;
+        font-size: ${trail.sz}rem;
+        animation-duration: ${trail.dur + p * 0.4}s;
+        animation-delay: ${baseDelay - p * (trail.dur / pawsInTrail * 0.9)}s;
+        --rot: ${pawDir}deg;
+        --mop: ${opacity};
+      `;
+      bg.appendChild(pf);
+    }
+  });
 })();
 
 /* ── Partículas doradas en el hero ── */
